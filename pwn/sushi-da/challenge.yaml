@@ -1,0 +1,14 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: sushida
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: true
+    image: eu.gcr.io/komabasai-live-ctf/sushida-healthcheck:273348593a491b3b7af7bc09cad9724f1ab9cfeb32924f37bd7b17120516ed92
+  image: eu.gcr.io/komabasai-live-ctf/sushida-challenge:55a188b558c82f1f3e30148f85278d355ceca6d6458cc23cdd98237bafc3dfad

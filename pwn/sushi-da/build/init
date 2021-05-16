@@ -1,0 +1,36 @@
+#!/bin/sh
+
+/bin/mount -t proc proc /proc
+/bin/mount -t sysfs sysfs /sys
+/bin/mount -t devtmpfs devtmpfs /dev
+/sbin/mdev -s
+
+mkdir -p /dev/pts
+mount -vt devpts -o gid=4,mode=620 none /dev/pts
+chmod 666 /dev/ptmx
+echo 1 > /proc/sys/kernel/kptr_restrict
+echo 1 > /proc/sys/kernel/dmesg_restrict
+
+mkdir /home
+mkdir /home/user
+chown 1000:1000 /home/user -R
+mv /flag* /home/user
+mv /client /home/user/client
+chown 1000:1000 /home/user/flag1
+chown 1000:1000 /home/user/flag2
+chown root:root /home/user/flag3
+chown 1000:1000 /home/user/client
+chmod 400 /home/user/flag*
+
+insmod /sushi-da.ko
+chmod 666 /dev/sushi-da
+echo -e "\nBoot took $(cut -d' ' -f1 /proc/uptime) seconds\n"
+echo -e "\n\n WELCOME TO SUSHIl 🍵🍣🍵\n\n"
+cd /home/user
+stty erase ''
+stty -echo
+setsid cttyhack setuidgid 1000 /home/user/client
+
+umount /proc
+umount /sys
+poweroff -d 0 -f

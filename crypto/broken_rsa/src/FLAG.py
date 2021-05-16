@@ -1,0 +1,1 @@
+FLAG = b'TSGLIVE{FIndInG_co-FactoR_Is_tyPIcal_Rsa_qU3stIon_dont_yoU_tHink_tHaT?}'

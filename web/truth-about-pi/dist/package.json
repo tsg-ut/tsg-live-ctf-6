@@ -1,0 +1,11 @@
+{
+  "name": "truth-about-pi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "lodash.get": "^4.4.2"
+  }
+}

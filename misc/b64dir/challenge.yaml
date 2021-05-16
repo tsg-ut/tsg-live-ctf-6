@@ -1,0 +1,43 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: b64dir
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+    image: kind/healthcheck:641521f26b2a1cf6903ef59a23402a8c9bccf3cf5825b23fff4cee73af10f245
+    #podTemplate:
+    #  template:
+    #    spec:
+    #      containers:
+    #        - image: eu.gcr.io/komabasai-live-ctf/b64dir-challenge:25f904dd9684cb28fe009dcea1612119fb465552fa1c941ca22a79355bb66ee3
+    #          imagePullPolicy: IfNotPresent
+    #          name: challenge
+    #          ports:
+    #            - containerPort: 1337
+    #              protocol: TCP
+    #          resources:
+    #            limits:
+    #              cpu: 900m
+    #            requests:
+    #              cpu: 450m
+    #          securityContext:
+    #            capabilities:
+    #              add:
+    #                - SYS_ADMIN
+    #            readOnlyRootFilesystem: false
+    #          terminationMessagePath: /dev/termination-log
+    #          terminationMessagePolicy: File
+    #          volumeMounts:
+    #            - mountPath: /kctf/pow
+    #              name: pow
+    #              readOnly: true
+    #            - mountPath: /kctf/pow-bypass
+    #              name: pow-bypass-pub
+    #              readOnly: true
+  image: eu.gcr.io/komabasai-live-ctf/b64dir-challenge:25f904dd9684cb28fe009dcea1612119fb465552fa1c941ca22a79355bb66ee3

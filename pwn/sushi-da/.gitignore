@@ -1,0 +1,7 @@
+*.o
+*/extracted/*
+.gdb_history 
+.vscode/**
+debug/**
+challenge/setpriv
+healthcheck/setpriv

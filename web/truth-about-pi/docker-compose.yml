@@ -1,0 +1,12 @@
+version: '2'
+services:
+  app:
+    restart: always
+    image: node
+    volumes:
+      - ./dist/:/code
+    command: sh -c "cd /code && npm i && node index.js"
+    ports:
+      - 10043:3000
+    environment:
+      - FLAG=TSGLIVE{I_have_ZERO_knowledger_about_ZERO}
