@@ -15,7 +15,7 @@
 [sushi-da2](pwn/sushi-da)|pwn|200|@smallkirby|2
 [sushi-da3](pwn/sushi-da)|pwn|500|@smallkirby|0
 [decomile me](rev/insane-rev)|rev|250|@moratorium08|1
-[Truth about Pi](web/truth-about-pi)|100|medium|@hakatashi|11
+[Truth about Pi](web/truth-about-pi)|web|100|@hakatashi|11
 [b64dir](misc/b64dir)|misc|200|@moratorium08|1
 [fisher](misc/fisher)|misc|200|@hakatashi|3
 
