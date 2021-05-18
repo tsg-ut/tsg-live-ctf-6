@@ -6,18 +6,18 @@
 
 ## Challenges List
 
-**Name**|**Genre**|**Difficulty**|**Author**
-:------|:------|:------|:------
-[Single RSA](crypto/single_rsa)|crypto|live|@hakatashi
-[Multiple RSA](crypto/multiple_rsa)|crypto|easy|@hakatashi
-[Broken RSA](crypto/broken_rsa)|crypto|easy|@naan4UGen
-[sushi-da1](pwn/sushi-da)|pwn|easy|@smallkirby
-[sushi-da2](pwn/sushi-da)|pwn|med-easy|@smallkirby
-[sushi-da3](pwn/sushi-da)|pwn|hard|@smallkirby
-[decomile me](rev/insane-rev)|rev|hard|@moratorium08
-[Truth about Pi](web/truth-about-pi)|web|medium|@hakatashi
-[b64dir](misc/b64dir)|misc|easy|@moratorium08
-[fisher](misc/fisher)|misc|med|@hakatashi
+**Name**|**Genre**|**Point**|**Author**|**Solves**
+:------|:------|:------|:------|:------
+[Single RSA](crypto/single_rsa)|crypto|50|@hakatashi|18
+[Multiple RSA](crypto/multiple_rsa)|crypto|100|@hakatashi|13
+[Broken RSA](crypto/broken_rsa)|crypto|200|@naan4UGen|9
+[sushi-da1](pwn/sushi-da)|pwn|100|@smallkirby|10
+[sushi-da2](pwn/sushi-da)|pwn|200|@smallkirby|2
+[sushi-da3](pwn/sushi-da)|pwn|500|@smallkirby|0
+[decomile me](rev/insane-rev)|rev|250|@moratorium08|1
+[Truth about Pi](web/truth-about-pi)|100|medium|@hakatashi|11
+[b64dir](misc/b64dir)|misc|200|@moratorium08|1
+[fisher](misc/fisher)|misc|200|@hakatashi|3
 
 ## Scoreboard
 
