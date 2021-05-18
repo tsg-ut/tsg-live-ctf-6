@@ -7,7 +7,7 @@
 ## Challenges List
 
 **Name**|**Genre**|**Difficulty**|**Author**
-:------|:------|:------|:------|:------
+:------|:------|:------|:------
 [Single RSA](crypto/single_rsa)|crypto|live|@hakatashi
 [Multiple RSA](crypto/multiple_rsa)|crypto|easy|@hakatashi
 [Broken RSA](crypto/broken_rsa)|crypto|easy|@naan4UGen
