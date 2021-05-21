@@ -16,6 +16,6 @@ for i in range(len(wave)):
     wave[i] = np.sin(i * 439.97 / 44100 * (2 * np.pi))
 
 # Fisher here :)
-# np.random.shuffle(wave)
+np.random.shuffle(wave)
 
 sf.write('result.wav', wave, 44100, 'PCM_24')
